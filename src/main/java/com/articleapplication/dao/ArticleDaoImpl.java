@@ -87,12 +87,20 @@ public class ArticleDaoImpl implements ArticleDao {
                 String title = resultSet.getString("title");
                 String content = resultSet.getString("article");
                 String username = resultSet.getString("username");
+                Timestamp date = resultSet.getTimestamp("updated_at");
+
+
+                LocalDateTime localDateTime = date.toLocalDateTime();
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+                String formattedTime = localDateTime.format(formatter);
+
 
                 Article article = new Article();
                 article.setId(id);
                 article.setTitle(title);
                 article.setArticle(content);
                 article.setUsername(username);
+                article.setUpdatedAt(formattedTime);
 
 
                 articles.add(article);
