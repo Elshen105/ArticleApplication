@@ -19,7 +19,7 @@
         <tr>
             <th style="background-color: lime">Article Title</th>
             <th style="background-color: lime">Article Content</th>
-<%--            <th style="background-color: orangered">Date</th>--%>
+            <th style="background-color: orangered">Date</th>
         </tr>
         </thead>
         <tbody>
@@ -27,7 +27,7 @@
             <tr>
                 <td><c:out value="${article.title}"/></td>
                 <td><c:out value="${article.article}"/></td>
-<%--                <td><c:out value="${article.updatedAt}"/></td>--%>
+                <td><c:out value="${article.updatedAt}"/></td>
 
 
 
