@@ -29,7 +29,7 @@
         <tr>
             <th style="background-color: lime">Article Title</th>
             <th style="background-color: lime">Article Content</th>
-            <th style="background-color: orangered">Action</th>
+            <th style="background-color: orangered">Date</th>
 
         </tr>
         </thead>
@@ -38,6 +38,7 @@
             <tr>
                 <td><c:out value="${article.title}" /></td>
                 <td><c:out value="${article.article}" /></td>
+                <td><c:out value="${article.updatedAt}" /></td>
 
                 <td>
                     <a href="<%=request.getContextPath()%>/user/article/actions?action=edit&id=<c:out value='${article.id}'/>" class="btn btn-warning">Edit</a>
