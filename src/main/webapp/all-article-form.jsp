@@ -18,7 +18,7 @@
             <th style="background-color: lime">Article Title</th>
             <th style="background-color: lime">Article Content</th>
             <th style="background-color: orangered">Author</th>
-            <th style="background-color: orangered">Actions</th>
+            <th style="background-color: orangered">Date</th>
 
         </tr>
         </thead>
@@ -28,6 +28,10 @@
                 <td><c:out value="${article.title}" /></td>
                 <td><c:out value="${article.article}" /></td>
                 <td style="background-color: black; color: cyan"><c:out value="${article.username}" /></td>
+
+
+                <td><c:out value="${article.updatedAt}"/></td>
+
 
                 <td>
                     <c:choose>
