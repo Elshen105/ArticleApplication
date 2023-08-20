@@ -43,7 +43,6 @@ public class RegisterController extends HttpServlet {
         user.setLastName(surname);
         user.setUsername(username);
         user.setPassword(password);
-//        user.setId((int)(Math.random() * 100));
 
         try {
             userDaoImp.register(user);
