@@ -9,9 +9,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @WebServlet(name = "ArticleController", value = "/user/article/actions")
@@ -47,7 +44,7 @@ public class ArticleController extends HttpServlet {
                     case "viewMyArticles":
                         showMyArticles(request, response);
                         break;
-                    case "viewAllArticles" :
+                    case "viewAllArticles":
                         showAllArticles(request, response);
                         break;
                     case "insert":
